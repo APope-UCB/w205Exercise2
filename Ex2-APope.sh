@@ -76,8 +76,8 @@ sparse run -t 120
 cd /root/w205Exercise2
 
 python finalresults.py happy
-python histogram.py
-python plot-top-tweets.py
+python histogram.py 13 15
+python plot-top-tweets.py 20
 
 # following code will move png file back to git
 # git add .
