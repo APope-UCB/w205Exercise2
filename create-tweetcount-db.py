@@ -21,6 +21,7 @@ con.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT) # <-- ADD THIS LINE
 
 #command to connect to specific dB
 cur = con.cursor()
+cur.execute("DROP DATABASE IF EXISTS %s ;" % 'tcount')
 cur.execute("CREATE DATABASE %s  ;" % 'tcount')
 con.close()
 
